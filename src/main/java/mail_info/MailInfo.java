@@ -33,4 +33,12 @@ public class MailInfo {
     public String getEmail() {
         return client.getEmail();
     }
+
+    public String getName() {
+        return client.getName();
+    }
+
+    public int getAge() {
+        return client.getAge();
+    }
 }

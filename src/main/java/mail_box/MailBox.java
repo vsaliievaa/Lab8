@@ -1,12 +1,14 @@
 package mail_box;
 
 import com.sendgrid.helpers.mail.Mail;
+import lombok.Getter;
 import mail_info.MailInfo;
 import mail_sender.MailSender;
 
 import java.util.ArrayList;
 
 public class MailBox {
+    @Getter
     private ArrayList<MailInfo> infos;
 
     public MailBox(ArrayList<MailInfo> infos) {
