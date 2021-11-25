@@ -28,12 +28,6 @@ class ClientTest {
     }
 
     @Test
-    void getId() {
-        assertEquals(5, first.getId());
-        assertEquals(6, second.getId());
-    }
-
-    @Test
     void getEmail() {
         assertEquals("alice@outlook.com", first.getEmail());
         assertNotEquals("bob@outlook.com", second.getEmail());

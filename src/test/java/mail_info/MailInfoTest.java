@@ -18,6 +18,7 @@ class MailInfoTest {
     void setUp() {
         client = new Client("Diane", 24,"female", "diane@ukr.net");
         mailInfo = new MailInfo(client, MailCode.GREETINGS);
+        mailCode = mailInfo.getMailCode();
     }
 
     @Test
@@ -37,9 +38,12 @@ class MailInfoTest {
 
     @Test
     void getClient() {
+        Client c = mailInfo.getClient();
+        assertEquals("Diane", c.getName());
     }
 
     @Test
     void getMailCode() {
+        assertEquals(MailCode.GREETINGS, mailCode);
     }
 }
